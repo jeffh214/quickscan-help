@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickScan Help</title>
+  <meta name="description" content="How to scan, edit, export, and keep documents on your phone with QuickScan.">
+  <style>
+    :root {
+      --violet: #7C4DFF;
+      --blue: #2979FF;
+      --coral: #FF6D3A;
+      --teal: #00BFA6;
+      --amber: #F9A825;
+      --magenta: #D500F9;
+      --ink: #101614;
+      --paper: #F6F4FF;
+      --card: #ffffff;
+      --muted: #4a4560;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.5;
+    }
+    header {
+      background: linear-gradient(120deg, var(--violet), var(--blue));
+      color: white;
+      padding: 28px 20px 24px;
+    }
+    header h1 { margin: 0 0 8px; font-size: 1.8rem; }
+    header p { margin: 0; max-width: 40rem; }
+    main { max-width: 44rem; margin: 0 auto; padding: 16px; }
+    nav.jump { display: flex; flex-wrap: wrap; gap: 8px; margin: 8px 0 16px; }
+    nav.jump a {
+      color: #3a0090;
+      background: white;
+      text-decoration: none;
+      border-radius: 999px;
+      padding: 6px 12px;
+      font-size: 0.9rem;
+    }
+    input[type="search"] {
+      width: 100%;
+      font: inherit;
+      padding: 12px 14px;
+      border-radius: 14px;
+      border: 1px solid #d9d2f0;
+      margin-bottom: 14px;
+    }
+    details {
+      background: var(--card);
+      border-radius: 18px;
+      margin: 0 0 12px;
+      box-shadow: 0 1px 0 rgba(16, 22, 20, 0.04);
+      overflow: hidden;
+    }
+    summary {
+      cursor: pointer;
+      padding: 14px 16px;
+      font-weight: 650;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    summary::-webkit-details-marker { display: none; }
+    summary:focus-visible { outline: 3px solid var(--blue); outline-offset: -3px; }
+    .dot { width: 14px; height: 14px; border-radius: 50%; flex: none; }
+    .body { padding: 0 16px 16px; }
+    .body p { margin: 0 0 10px; }
+    ul { margin: 0; padding-left: 1.1rem; }
+    li { margin: 0 0 8px; }
+    table { width: 100%; border-collapse: collapse; font-size: 0.92rem; margin-top: 8px; }
+    th, td { text-align: left; vertical-align: top; padding: 8px 6px; border-bottom: 1px solid #eee8ff; }
+    th { background: rgba(124, 77, 255, 0.12); }
+    .empty { display: none; padding: 8px 4px 16px; }
+    footer {
+      max-width: 44rem;
+      margin: 0 auto;
+      padding: 8px 16px 40px;
+      color: var(--muted);
+    }
+    footer a { color: #3a0090; }
+    @media (prefers-color-scheme: dark) {
+      :root { --paper: #14121c; --card: #221e30; --ink: #f4f1ff; --muted: #c9c2de; }
+      nav.jump a { background: #2c2740; color: #efe9ff; }
+      input[type="search"] { background: #221e30; color: var(--ink); border-color: #3d3658; }
+      th, td { border-bottom-color: #3d3658; }
+      th { color: var(--ink); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>QuickScan Help</h1>
+    <p>Scan a page to PDF on your phone. No account, no ads, no subscription. This is the same guide that is stored in the app.</p>
+  </header>
+  <main>
+    <nav class="jump" aria-label="Sections">
+      <a href="#getting-started">Getting started</a>
+      <a href="#scanning">Scanning</a>
+      <a href="#importing">Importing</a>
+      <a href="#editing">Editing</a>
+      <a href="#exporting">Exporting</a>
+      <a href="#library">Library</a>
+      <a href="#id-card">ID card</a>
+      <a href="#receipts">Receipts</a>
+      <a href="#pro">Pro</a>
+      <a href="#widget">Shortcuts</a>
+      <a href="#purchases">Purchases</a>
+      <a href="#privacy">Privacy</a>
+      <a href="#troubleshooting">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <input id="q" type="search" placeholder="Search the guide" aria-label="Search the guide">
+    <p id="empty" class="empty">Nothing in the guide matches that.</p>
+
+    <details id="getting-started" open>
+      <summary><span class="dot" style="background:#7C4DFF"></span>Getting started</summary>
+      <div class="body">
+        <p>QuickScan turns a page into a PDF or JPG that stays on this phone. There is no account and no subscription.</p>
+        <p>Your first scan takes three steps.</p>
+        <ul>
+          <li>On Home, tap the round Scan button.</li>
+          <li>Capture the page. Drag the corners if the edges need a nudge, then accept.</li>
+          <li>The scan is saved in your library. Tap the share icon when you want a PDF or JPG.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="scanning">
+      <summary><span class="dot" style="background:#2979FF"></span>Scanning</summary>
+      <div class="body">
+        <p>QuickScan can capture a page two ways. The default is Google’s document scanner. It finds the page for you. The first time, Play may download a small scanner module, and the screen can say it is downloading. Later scans start immediately.</p>
+        <p>Prefer QuickScan’s own camera? In Settings, turn on Prefer built-in camera. You get a live preview, edge detection, and the corner editor.</p>
+        <ul>
+          <li>Use even light. A shadow across the page becomes a dark band.</li>
+          <li>Lay the page flat on a surface that contrasts with the paper, such as a dark table under a white sheet.</li>
+          <li>Fill the frame, and keep the whole page in view.</li>
+          <li>Hold still until the capture finishes. If the page is blurry, add light and try again.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="importing">
+      <summary><span class="dot" style="background:#00BFA6"></span>Importing and sharing in</summary>
+      <div class="body">
+        <p>You can start from photos already on the phone, or from a file another app shares.</p>
+        <p>A share is saved only when at least one page actually opens. If QuickScan cannot read the file, it says “Couldn't open 1 file.” and does not create an empty scan. Rotating the phone or switching dark mode does not import that same share again. A new share still does.</p>
+        <ul>
+          <li>Home → Import, or the Import shortcut, picks photos.</li>
+          <li>In Files or another app, share an image or a PDF and choose QuickScan.</li>
+          <li>Free scans hold 5 pages. Extra pages are skipped, and QuickScan tells you how many were added.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="editing">
+      <summary><span class="dot" style="background:#FF6D3A"></span>Editing pages</summary>
+      <div class="body">
+        <p>Open a scan to crop, rotate, filter, and rearrange it. In landscape the page stays beside the tools so you can still see it.</p>
+        <ul>
+          <li>Crop. Tap Crop and drag the corners onto the page edges.</li>
+          <li>Rotate. Each tap turns the page a quarter turn.</li>
+          <li>Reorder. Press and hold a thumbnail, then drag it left or right.</li>
+          <li>Delete. Tap Delete. Undo sits on the message for a few seconds.</li>
+          <li>Filters. Original, Grayscale, and Document are free. Color enhance, Magic color, and Sharpen are part of Pro.</li>
+          <li>Add. Tap Add to put another page on this scan. Free scans stop at 5 pages.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="exporting">
+      <summary><span class="dot" style="background:#F9A825"></span>Exporting</summary>
+      <div class="body">
+        <p>Tap the share icon on a scan. PDF is one file for the whole document. JPG shares each page as an image. Saving several JPGs writes a zip.</p>
+        <p>Share sends the file to another app. Save to Files writes it where you choose, often Downloads. Canceling the picker does not say Saved. Saved! appears only after the write finishes, and it shows the name that was written, including a (2) if that name already existed.</p>
+        <p>Choices on the export sheet do not change Settings. Settings is where the defaults live. The sheet remembers what you last used until you leave the app.</p>
+        <ul>
+          <li>Page size is A4, Letter, or Auto. Custom millimetres are part of Pro.</li>
+          <li>Quality is Low, Medium, or High. That is the image size, not a watermark. Free scans are never watermarked.</li>
+          <li>Pro can add a searchable text layer, a password, and a .txt file of the words. Tap the Searchable text layer label or the switch. Both turn it on.</li>
+          <li>Sharing several selected scans sends one file per scan, as a PDF unless Settings says otherwise.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="library">
+      <summary><span class="dot" style="background:#D500F9"></span>Library</summary>
+      <div class="body">
+        <p>Every scan stays in the app’s private storage on this phone.</p>
+        <ul>
+          <li>Rename from the card menu. The exported file uses that name.</li>
+          <li>Search matches the name. With Pro it also matches words recognized on the page. The X clears the text. Closing search, or Back, clears it too. Back closes search before leaving Home.</li>
+          <li>Sort by newest, oldest, or name.</li>
+          <li>Duplicate makes a second copy on this phone.</li>
+          <li>Long-press a card to select several, then share or delete them.</li>
+          <li>After you unlock Pro, QuickScan reads scans that did not have text yet. A line says Reading text 2 of 6 while that runs.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="id-card">
+      <summary><span class="dot" style="background:#7C4DFF"></span>ID card mode</summary>
+      <div class="body">
+        <p>Home → ID card, or the ID card shortcut. Photograph or import the front, then the back. QuickScan places both on one page at about card size and names it with the date.</p>
+      </div>
+    </details>
+
+    <details id="receipts">
+      <summary><span class="dot" style="background:#2979FF"></span>Receipts</summary>
+      <div class="body">
+        <p>Receipts are part of Pro. Open them from Home or the Receipt shortcut. You can scan and attach a photo before the merchant and total are filled in.</p>
+        <p>QuickScan reads the page on the phone and suggests the merchant, the date as yyyy-MM-dd, and the total. It skips generic words such as RECEIPT, INVOICE, and THANK YOU, and it prefers the amount on TOTAL or AMOUNT DUE. Check the fields before you save. The date has to look like 2026-10-11.</p>
+        <p>Export the log as CSV when you want a spreadsheet. The file stays on this phone until you share it.</p>
+      </div>
+    </details>
+
+    <details id="pro">
+      <summary><span class="dot" style="background:#00BFA6"></span>Pro features</summary>
+      <div class="body">
+        <p>Pro is a one-time purchase. The suggested price is $4.99. There is no subscription, and the free plan has no watermark.</p>
+        <ul>
+          <li>Text recognition is Latin and runs on this phone. Copy the words, export .txt, or add a searchable text layer to a PDF.</li>
+          <li>Search the words inside scans you already have. After unlock, QuickScan reads them in the background.</li>
+          <li>Auto-naming. Settings → Name scans from the page uses the first real line plus the date.</li>
+          <li>Signatures. Draw one, save it, and place it. Drag to move and pinch to resize. The shape you drew is kept.</li>
+          <li>Password PDFs use AES-256. You choose the password at export. QuickScan cannot recover a forgotten password.</li>
+          <li>Advanced filters, custom page size, and margins from 0 to 40 mm.</li>
+          <li>Unlimited pages, and batch scanning. Batch keeps the camera open so you can add page after page.</li>
+        </ul>
+        <table>
+          <thead>
+            <tr><th>Feature</th><th>Free</th><th>Pro</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>Pages in one scan</td><td>5</td><td>Unlimited</td></tr>
+            <tr><td>Batch scanning</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Filters</td><td>Original, Grayscale, Document</td><td>Also Color enhance, Magic color, Sharpen</td></tr>
+            <tr><td>Text recognition</td><td>No</td><td>Copy, .txt, searchable PDF</td></tr>
+            <tr><td>Search</td><td>Names</td><td>Names and words on the page</td></tr>
+            <tr><td>Signatures</td><td>No</td><td>Yes</td></tr>
+            <tr><td>Password PDF</td><td>No</td><td>AES-256</td></tr>
+            <tr><td>Receipt log</td><td>No</td><td>Yes, with CSV</td></tr>
+            <tr><td>Page size</td><td>A4, Letter, Auto</td><td>Also custom</td></tr>
+            <tr><td>Margins</td><td>10 mm</td><td>0–40 mm</td></tr>
+            <tr><td>Watermark</td><td>None</td><td>None</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </details>
+
+    <details id="widget">
+      <summary><span class="dot" style="background:#FF6D3A"></span>Widget and shortcuts</summary>
+      <div class="body">
+        <p>Add the QuickScan widget to your home screen. It starts a scan. Long-press the app icon for Scan, Import, Receipt, and ID card. Those shortcuts open the right screen even when QuickScan is already open in the background.</p>
+      </div>
+    </details>
+
+    <details id="purchases">
+      <summary><span class="dot" style="background:#F9A825"></span>Purchases</summary>
+      <div class="body">
+        <p>Pro is $4.99 once, charged by Google Play. It is not a subscription, so you are not billed again.</p>
+        <p>Unlock Pro is in Settings and on the Pro screen. Restore purchase is in Settings. Use the same Google account that bought Pro. A different account will not see the purchase until you restore from the account that paid. If Play Billing is not available on the device, QuickScan says so.</p>
+      </div>
+    </details>
+
+    <details id="privacy">
+      <summary><span class="dot" style="background:#D500F9"></span>Privacy</summary>
+      <div class="body">
+        <p>Scanning, text recognition, signatures, and receipt notes run on this phone. Nothing is uploaded. There is no QuickScan account, no ads, and no analytics. The app does not use the internet and does not use an advertising ID. The camera is on only while you are scanning.</p>
+        <p>Scans live in the app’s private storage. Android backup is off, so they are not copied to your Google account. Deleting QuickScan deletes those scans. Export anything you want to keep before you uninstall.</p>
+        <p>A share from another app only opens the file you chose.</p>
+      </div>
+    </details>
+
+    <details id="troubleshooting">
+      <summary><span class="dot" style="background:#7C4DFF"></span>Troubleshooting</summary>
+      <div class="body">
+        <ul>
+          <li>The scanner says it is downloading. The first time, Google’s document scanner may fetch a module. Wait for it, or turn on Prefer built-in camera in Settings.</li>
+          <li>Camera permission denied. Allow Camera for QuickScan in system settings, then return to the camera screen. It checks again when it resumes. You can also tap Try the camera again.</li>
+          <li>Blurry or dark scans. Add light, hold still, and put the page on a contrasting surface. Use Crop if the edges are off.</li>
+          <li>Text recognition missed words. It is a Pro feature, Latin only, and it needs a sharp page. Handwriting and non-Latin scripts are not read. On a receipt, confirm the merchant, date, and total before you save.</li>
+          <li>You cannot find the saved file. Save to Files writes it where you picked, often Downloads. Saved! shows the real name, which may include (2). Share hands the file to another app and does not by itself put a copy in Downloads.</li>
+          <li>The purchase did not come back. Open Settings → Restore purchase while signed into the Google account that paid.</li>
+          <li>A share says Couldn't open. QuickScan keeps a scan only when a page opens. Share the image or PDF again from Files. Other file types are skipped.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details id="contact">
+      <summary><span class="dot" style="background:#2979FF"></span>Contact</summary>
+      <div class="body">
+        <p>Questions: <a href="mailto:jefflearning12@gmail.com">jefflearning12@gmail.com</a></p>
+        <p>Privacy policy: <a href="https://jeffh214.github.io/quickscan-privacy/">jeffh214.github.io/quickscan-privacy</a></p>
+      </div>
+    </details>
+  </main>
+  <footer>
+    <p>QuickScan is the scanner. QuickPDF is the offline sister app for merging and compressing PDFs.</p>
+  </footer>
+  <script>
+    var box = document.getElementById("q");
+    var empty = document.getElementById("empty");
+    box.addEventListener("input", function () {
+      var q = box.value.trim().toLowerCase();
+      var shown = 0;
+      document.querySelectorAll("main details").forEach(function (item) {
+        var hit = !q || item.textContent.toLowerCase().indexOf(q) !== -1;
+        item.style.display = hit ? "" : "none";
+        if (hit) shown += 1;
+        if (q && hit) item.open = true;
+      });
+      empty.style.display = shown ? "none" : "block";
+    });
+  </script>
+</body>
+</html>
